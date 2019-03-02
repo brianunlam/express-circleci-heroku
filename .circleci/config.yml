@@ -7,6 +7,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: clean-npm
+          command: 'sudo npm cache clean -f'
+      - run:
           name: update-npm
           command: 'sudo npm install -g npm@5'
       - restore_cache:
