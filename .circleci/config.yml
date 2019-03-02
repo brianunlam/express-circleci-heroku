@@ -7,9 +7,6 @@ jobs:
     steps:
       - checkout
       - run:
-          name: clean-npm
-          command: 'sudo npm cache clean -f'
-      - run:
           name: update-npm
           command: 'sudo npm install -g npm@5'
       - restore_cache:
@@ -27,11 +24,3 @@ jobs:
       - run:
           name: lint
           command: npm run lint
-      - store_artifacts:
-          path: test-results.xml
-          prefix: tests
-      - store_artifacts:
-          path: lint
-          prefix: lint
-      - store_test_results:
-          path: test-results.xml
