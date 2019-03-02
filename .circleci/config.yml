@@ -23,7 +23,7 @@ jobs:
           command: npm test
       - run:
           name: lint
-          command: npm script lint
+          command: npm run lint
       - store_artifacts:
           path: test-results.xml
           prefix: tests
