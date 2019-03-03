@@ -25,7 +25,7 @@ sequelize
   });
 
 sequelize
-  .sync({ force: true })
+  .sync()
   .then(() => {
     console.log('Databases and tables created!');
   }, (err) => {
