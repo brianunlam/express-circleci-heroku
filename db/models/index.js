@@ -27,8 +27,8 @@ sequelize
 sequelize
   .sync({ force: true })
   .then(() => {
-    console.log('It worked!');
-  }, () => {
+    console.log('Databases and tables created!');
+  }, (err) => {
     console.log('An error occurred while creating the table:', err);
   });
 
