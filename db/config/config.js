@@ -1,4 +1,7 @@
+require('dotenv').config(); // this is important!
+
 module.exports = {
+
   development: {
     dialect: 'sqlite',
     storage: './db/data/dev-db.sqlite3'
