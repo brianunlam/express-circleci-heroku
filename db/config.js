@@ -5,7 +5,7 @@ module.exports = {
   },
   test: {
     dialect: 'sqlite',
-    storage: 'data/test-db.sqlite3'
+    storage: './db/data/test-db.sqlite3'
   },
   production: {
     username: process.env.RDS_USERNAME,

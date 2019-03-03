@@ -24,7 +24,7 @@ sequelize
     console.log('Unable to connect to the database:', err);
   });
 
-sequelize
+db.sync = sequelize
   .sync()
   .then(() => {
     console.log('Databases and tables created!');

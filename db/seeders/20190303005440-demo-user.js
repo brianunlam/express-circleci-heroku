@@ -3,7 +3,7 @@
 module.exports = {
   up: queryInterface => queryInterface.bulkInsert('Users', [
     {
-      username: 'Brianfdfdf',
+      username: 'Brian',
       createdAt: new Date(),
       updatedAt: new Date()
     }

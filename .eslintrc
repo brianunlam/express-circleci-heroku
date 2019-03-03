@@ -27,6 +27,7 @@
       "after": true,
       "afterEach": true,
       "before": true,
+      "beforeAll": true,
       "beforeEach": true,
       "should": true,
       "expect": true

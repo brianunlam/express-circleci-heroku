@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "test": "npx jest",
-    "lint": "npx eslint --ignore-path .gitignore ."
+    "lint": "npx eslint --ignore-path .gitignore .",
+    "dbSeed": "npx sequelize db:seed:all --debug"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "sequelize-cli": "^5.4.0"
   },
   "devDependencies": {
+    "child-process-promise": "^2.2.1",
     "eslint": "^5.15.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
