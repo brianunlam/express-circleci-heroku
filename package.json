@@ -19,13 +19,17 @@
   },
   "homepage": "https://github.com/brianunlam/express-circleci-heroku#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "sequelize": "^4.42.1",
+    "sequelize-cli": "^5.4.0"
   },
   "devDependencies": {
     "eslint": "^5.15.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
     "jest": "^24.1.0",
+    "sqlite3": "^4.0.6",
     "supertest": "^3.4.2"
   }
 }
